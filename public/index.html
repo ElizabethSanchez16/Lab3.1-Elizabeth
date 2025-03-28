@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - CEPI</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS compilado -->
+</head>
+<body>
+  <!-- Contenedor raíz para React -->
+  <div id="root"></div>
+
+  <!-- CDNs ESENCIALES (ORDEN IMPORTANTE) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Componentes (cargar primero dependencias) -->
+  <script src="/js/components/Header.js" type="text/babel"></script>
+  <script src="/js/components/Footer.js" type="text/babel"></script>
+  <script src="/js/components/BlogCard.js" type="text/babel"></script>
+  <script src="/js/components/BlogList.js" type="text/babel"></script>
+
+  <!-- App principal -->
+  <script src="/js/app.js" type="text/babel"></script>
+</body>
+</html>
