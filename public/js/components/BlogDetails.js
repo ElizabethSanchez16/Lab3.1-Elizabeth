@@ -7,22 +7,22 @@ function BlogDetails({ blogId }) {
       setTimeout(() => {
         const mockBlog = {
           id: blogId,
-          title: `Artículo ${blogId}`,
-          content: 'Contenido detallado del artículo...',
+          title: `Article ${blogId}`,
+          content: "Contenu détaillé de l'article...",
           date: '2023-01-01',
-          author: 'Autor Ejemplo'
+          author: "Exemple d'auteur"
         };
         setBlog(mockBlog);
         setLoading(false);
       }, 800);
     }, [blogId]);
   
-    if (loading) return <div>Cargando artículo...</div>;
+    if (loading) return <div>Chargement des articles...</div>;
   
     return (
       <article className="blog-details">
         <h1>{blog.title}</h1>
-        <p className="meta">Por {blog.author} el {blog.date}</p>
+        <p className="meta">Écrit par {blog.author} le {blog.date}</p>
         <div className="content">{blog.content}</div>
       </article>
     );

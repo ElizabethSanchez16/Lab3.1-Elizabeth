@@ -9,7 +9,7 @@ function AddComment({ blogId }) {
   
       // Simulación de envío a API
       setTimeout(() => {
-        console.log("Comentario enviado:", { blogId, text: commentText });
+        console.log("Commentaire soumis :", { blogId, text: commentText });
         setIsSubmitting(false);
         setSuccess(true);
         setCommentText("");
@@ -19,18 +19,18 @@ function AddComment({ blogId }) {
   
     return (
       <div className="add-comment">
-        <h3>Añadir comentario</h3>
+        <h3>Ajouter un commentaire</h3>
         <form onSubmit={handleSubmit}>
           <textarea
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
-            placeholder="Escribe tu comentario..."
+            placeholder="Écrivez votre commentaire..."
             required
           />
           <button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Enviando..." : "Enviar"}
+            {isSubmitting ? "Envoi..." : "Envoyer"}
           </button>
-          {success && <p className="success-message">¡Comentario enviado!</p>}
+          {success && <p className="success-message">Commentaire envoyé !</p>}
         </form>
       </div>
     );

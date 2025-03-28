@@ -6,15 +6,15 @@ function BlogList() {
       // Simulando carga de datos (reemplaza con tu API real)
       setTimeout(() => {
         const mockBlogs = [
-          { id: 1, title: 'Primer artículo', excerpt: 'Resumen del primer artículo...', date: '2023-01-01' },
-          { id: 2, title: 'Segundo artículo', excerpt: 'Resumen del segundo artículo...', date: '2023-01-02' }
+          { id: 1, title: 'Premier article', excerpt: 'Résumé du premier article...', date: '2023-01-01' },
+          { id: 2, title: 'Deuxième article', excerpt: 'Résumé du deuxième article...', date: '2023-01-02' }
         ];
         setBlogs(mockBlogs);
         setLoading(false);
       }, 1000);
     }, []);
   
-    if (loading) return <div>Cargando artículos...</div>;
+    if (loading) return <div>Chargement des articles...</div>;
   
     return (
       <div className="blog-list">
