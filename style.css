@@ -1,0 +1,45 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .blog-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .blog-card h2 {
+    color: #2c3e50;
+  }
+  
+  /* Estilos para comentarios */
+  .comment {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .add-comment textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+  }
