@@ -10,5 +10,7 @@ function App() {
     );
   }
   
-  // Renderizar la aplicación en el contenedor root
-  ReactDOM.render(<App />, document.getElementById('root'));
+  
+  const container = document.getElementById('root');
+  const root = ReactDOM.createRoot(container); // createRoot(container!) if you use TypeScript
+  root.render(<App />);
