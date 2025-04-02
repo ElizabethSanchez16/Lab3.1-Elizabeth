@@ -7,37 +7,37 @@ function Header() {
               <img src="images/LogoCEPI.PNG" alt="Logo CEPI" className="logo" />
               CEPI Cégep de Jonquière
             </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Accueil</a>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
+                        <li className="nav-item">
+                            <a className="nav-link active" href="index.html">Accueil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Menu3</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Menu3</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Menu4</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Menu4</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <img src="images/perfil-empty.png" alt="Perfil image" class="perfil"></img>
+            <img src="images/perfil-empty.png" alt="Perfil image" className="perfil"></img>
         </nav>
 
-        <nav class="filter-section">
-          <div class="container-fluid">
-            <div class="row align-items-center">
+        <nav className="filter-section">
+          <div className="container-fluid">
+            <div className="row align-items-center">
                 
-                <div class="col-md-6">
-                    <label for="sort-by" class="form-label">Trier par:</label>
-                    <select class="form-select" id="sort-by">
-                        <option selected>Select</option>
+                <div className="col-md-6">
+                    <label htmlFor="sort-by" className="form-label">Trier par:</label>
+                    <select className="form-select" id="sort-by">
+                        <option defaultValue>Select</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
@@ -45,10 +45,10 @@ function Header() {
                 </div>
     
                 
-                <div class="col-md-6">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                <div className="col-md-6">
+                    <form className="d-flex" role="search">
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -59,5 +59,3 @@ function Header() {
       
     );
   }
-
-  export default Header;

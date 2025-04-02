@@ -16,4 +16,7 @@ function BlogPage() {
     );
   }
   
-  ReactDOM.render(<BlogPage />, document.getElementById('root'));
+  const container = document.getElementById('root');
+  const root = ReactDOM.createRoot(container); // createRoot(container!) if you use TypeScript
+  root.render(<BlogPage />);
+  
